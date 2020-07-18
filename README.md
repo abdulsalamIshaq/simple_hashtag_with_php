@@ -13,5 +13,3 @@ $pattern = '/#(\w+)/';
 
 $text = preg_replace($pattern, '<a href="http://localhost/hashtag/$1">#$1</a>', $text);
 ```
-
-And lastely replace all 
