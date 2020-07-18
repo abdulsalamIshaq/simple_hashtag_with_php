@@ -11,7 +11,7 @@ there is two ways in doing this, is either using this regEx ``` /#(\w+)/  ``` or
 ```PHP
 $pattern = '/#(\w+)/';
 
-$text = preg_replace('/#(\w+)/', '<a href="http://localhost/hashtag/$1">#$1</a>', $text);
+$text = preg_replace($pattern, '<a href="http://localhost/hashtag/$1">#$1</a>', $text);
 ```
 
 And lastely replace all 
